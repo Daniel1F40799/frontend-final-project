@@ -10,6 +10,7 @@ function Navigation() {
       <Link to="/studygroups">Study Groups</Link>
       <Link to="/helpsettings">Help & Settings</Link>
       <Link to="/admin">Admin</Link>
+      <Link to="/admin/KPIs">KPI</Link>
       <Link to="/register" className={styles.register}>Register</Link>
     </nav>
   );

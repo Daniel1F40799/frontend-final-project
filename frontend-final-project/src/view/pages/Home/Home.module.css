@@ -17,6 +17,7 @@
   margin-bottom: 30px;
   text-align: center;
   color: black;
+  text-decoration: underline;
 }
 
 .buttons {
@@ -41,7 +42,7 @@
 .registerLink {
   background: none;
   color: red;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   text-decoration: underline;
   border: none;
