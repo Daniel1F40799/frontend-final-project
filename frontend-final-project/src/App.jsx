@@ -9,6 +9,10 @@ import Admin from './view/pages/Admin/Admin';
 import Register from './view/pages/Register/Register';
 import KPI from './view/pages/KPIs/KPI';
 import './App.css';
+import Login from './view/pages/Login/Login';
+
+
+
 
 function App() {
   return (
@@ -24,6 +28,7 @@ function App() {
             <Route path="/helpsettings" element={<HelpSettings />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/admin/KPIs" element={<KPI />} />
           </Routes>
         </main>
