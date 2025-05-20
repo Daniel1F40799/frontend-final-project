@@ -1,25 +1,109 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.tasksContainer {
-  width: 100%;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
   min-height: 100vh;
-  background-color: #f3f4f6;
-  padding: 20px;
-  overflow-x: hidden;
+  background-color: #b0dae8;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.section {
+.card {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   width: 100%;
-  margin: 20px auto;
-  background-color: #c1c1c1;
-  padding: 20px;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: left;
-  min-height: 120px;
-  border-radius: 8px;
+  max-width: 500px;
+  margin-bottom: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input,
+input[type="date"] {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  color: #111;
+  transition: border 0.3s, background-color 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input:focus,
+input[type="date"]:focus {
+  border-color: #007bff;
+  background-color: #ffffff;
+  outline: none;
+  color: #111;
+}
+
+.button {
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.taskList {
+  width: 100%;
+  max-width: 500px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.taskItem {
+  background: #ffffff;
+  padding: 16px 20px;
+  border-left: 6px solid #007bff;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.taskText {
+  font-weight: 500;
+  color: #333;
+}
+
+.taskDate {
+  font-size: 14px;
+  color: #555;
 }

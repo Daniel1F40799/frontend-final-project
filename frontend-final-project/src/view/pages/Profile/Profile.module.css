@@ -7,38 +7,42 @@
   box-sizing: border-box;
 }
 
-.header {
-  padding: 10px;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: left;
-  background-color: #f3f4f6;
-}
-
-.navbar {
-  width: 100%;
-  background-color: #2563eb;
-  color: white;
-  display: flex;
-  justify-content: space-around;
-  padding: 10px 0;
-  font-weight: bold;
-}
-
-.navbar span {
-  cursor: pointer;
-}
-
 .section {
   width: 97%;
   margin: 20px auto;
   background-color: #c1c1c1;
   padding: 20px;
   font-size: 18px;
-  font-weight: bold;
   text-align: left;
   min-height: 120px;
   border-radius: 8px;
+  position: relative;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e3a8a;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  font-weight: normal;
+}
+
+.taskItem {
+  margin-bottom: 8px;
+}
+
+.groupMembers {
+  font-size: 14px;
+  color: #333;
 }
 
 .editButton {
@@ -50,4 +54,20 @@
   font-size: 16px;
   cursor: pointer;
   color: white;
+  margin-top: 10px;
+}
+
+.deleteButton {
+  background: transparent;
+  border: none;
+  color: #d11a2a;
+  font-size: 24px;
+  margin-left: 12px;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: transform 0.2s ease;
+}
+
+.deleteButton:hover {
+  transform: scale(1.2);
 }

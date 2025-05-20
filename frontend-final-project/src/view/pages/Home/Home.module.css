@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   min-height: 100vh;
   background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('/src/assets/home.jpg');
@@ -8,50 +8,82 @@
   background-position: center;
   background-repeat: no-repeat;
   backdrop-filter: blur(8px);
-  padding-top: 80px; 
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
 }
 
 .title {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: bold;
+  margin-bottom: 15px;
+  color: #1e3a8a;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #333;
   margin-bottom: 30px;
-  text-align: center;
-  color: black;
-  text-decoration: underline;
 }
 
 .buttons {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 250px; 
+  gap: 15px;
+}
+
+.loginButton,
+.registerButton,
+.dashboardButton,
+.logoutButton {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
 }
 
 .loginButton {
-  background: rgba(255, 255, 255, 0.3); 
-  color: black;
-  padding: 12px 24px;
-  font-size: 20px;
-  font-weight: bold;
-  border: 2px solid black;
-  cursor: pointer;
-  margin-bottom: 10px;
-  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
 }
 
-.registerLink {
-  background: none;
-  color: red;
-  font-size: 22px;
-  font-weight: bold;
-  text-decoration: underline;
-  border: none;
-  cursor: pointer;
-  margin-top: 8px;
-}
-.registerLink:hover {
-  color: darkred;
-  text-decoration: underline;
-  cursor: pointer;
+.loginButton:hover {
+  background-color: #1d4ed8;
 }
 
+.registerButton {
+  background-color: #10b981;
+  color: white;
+}
+
+.registerButton:hover {
+  background-color: #059669;
+}
+
+.dashboardButton {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.dashboardButton:hover {
+  background-color: #2563eb;
+}
+
+.logoutButton {
+  background-color: #ef4444;
+  color: white;
+}
+
+.logoutButton:hover {
+  background-color: #dc2626;
+}

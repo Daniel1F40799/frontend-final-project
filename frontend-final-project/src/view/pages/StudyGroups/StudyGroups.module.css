@@ -1,40 +1,69 @@
 .studyGroupsContainer {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('/src/assets/home.jpg');
+  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('/src/assets/home.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  backdrop-filter: blur(5px);
-  padding: 100px 20px 20px 20px;
+  padding: 100px 20px 40px 20px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
-  font-size: 28px; 
+  font-size: 28px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 120px; 
+  margin-bottom: 40px;
+  color: #111;
+  text-decoration: underline;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #ffffffdd;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white; 
   color: black; 
-  text-decoration: underline;
+  font-size: 16px;
+  margin-right: 10px;
 }
-.groupsGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  max-width: 800px;
-  margin: 0 auto;
+.input::placeholder {
+  color: #666;
 }
 
-.groupLink {
-  font-size: 22px;
+.input:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+.button {
+  padding: 14px;
+  background-color: #4f46e5;
+  color: white;
   font-weight: bold;
-  text-decoration: underline;
-  color: #0077cc;
-  text-align: center;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.2s;
 }
 
-.groupLink:hover {
-  color: #005999;
+.button:hover {
+  background-color: #4338ca;
 }
